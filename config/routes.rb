@@ -22,4 +22,10 @@ Rails.application.routes.draw do
   # Create route for submitting the new task form
   post 'tasks', to: 'tasks#create'
 
+  get 'tasks/:id/edit', to: 'tasks#edit', as: 'edit_task'
+
+  patch 'tasks/:id', to: 'tasks#update', as: 'update_task'
+
+  delete 'tasks/:id', to: 'tasks#destroy'
+
 end

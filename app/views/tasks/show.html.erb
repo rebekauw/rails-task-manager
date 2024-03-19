@@ -1,5 +1,6 @@
 <div>
 <h1><%= @task.title %></h1>
+<button type="button" class="btn-secondary"><%= link_to "Edit this task", edit_task_path%></button>
 </div>
 <div class="container-fluid p-3 my-3 bg-$gray-500 border">
     <%= @task.details %>
@@ -7,7 +8,7 @@
 <div class="container-fluid p-3 my-3">
     <div class="form-check">
             <input class="form-check-input" type="checkbox" id="check1">
-            This task is complated
+            This task is completed
     </div>
 </div>
 <div>
